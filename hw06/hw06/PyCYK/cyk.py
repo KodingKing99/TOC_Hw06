@@ -14,17 +14,17 @@ class CYK(object):
         print(cnfg)
         print(f"Test String Length: {len(test_string)}")
         # Create Table
-        D = [[0 for i in range(len(test_string))] for n in range(1, len(test_string))]
+        D = [[0 for i in range(len(test_string))] for n in range(len(test_string))]
         print(D)
         # Initialize the table, D[s,l] -> D[i, 0] x at s length of 1.
-        # for i in range(len(test_string)):
-        #     D[i][0] = (cnfg.fetch_lhs(test_string[i]))
-        # print(D)
-        # print("Doing table stuff")
-        # for l in range(1, len(test_string)):
-        #     for s in range(0, len(test_string) - l):
-        #         for k in range(0, l):
-        #             print(f"D[{s}][{l}] = D[{s}][{k}] X D[{s + k}][{l - k}]")
+        for i in range(len(test_string)):
+            D[i][0] = (cnfg.fetch_lhs(test_string[i]))
+        print(D)
+        print("Doing table stuff")
+        for l in range(1, len(test_string)):
+            for s in range(0, len(test_string) - l):
+                for k in range(0, l):
+                    print(f"D[{s + 1}][{l + 1}] = D[{s + 1}][{k + 1}] X D[{s + k + 2}][{l - k}]")
 
                 
             # d[i][]
