@@ -1,7 +1,7 @@
 ###############################################
 # module: cyk.py
-# YOUR NAME
-# YOUR A-#
+# Nick Sorenson
+# A02287085
 ###############################################
 
 class CYK(object):
@@ -24,4 +24,3 @@ class CYK(object):
                         D[s][l].update(production)
 
         return 'S' in D[0][len(test_string) - 1]
-
