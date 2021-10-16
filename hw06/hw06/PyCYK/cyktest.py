@@ -144,7 +144,7 @@ class TestCykAlgorithm(unittest.TestCase):
         self._use_grammar1()
         input_str = 'baab'
         print('Input string: {}'.format(input_str))
-        result = (CYK.is_in_cfl(input_str, self._grammar))
+        result = (CYK.is_in_cfl(input_str, self._grammar, True))
         print('Result = ' + str(result))
 
     def test4b(self):
@@ -152,7 +152,7 @@ class TestCykAlgorithm(unittest.TestCase):
         self._use_grammar1()
         input_str = 'aaab'
         print('Input string: {}'.format(input_str))
-        result = (CYK.is_in_cfl(input_str, self._grammar))
+        result = (CYK.is_in_cfl(input_str, self._grammar, True))
         print('Result = ' + str(result))
 
     ### ===================== Grammar 2 Tests #############################

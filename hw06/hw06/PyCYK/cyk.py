@@ -7,7 +7,7 @@
 class CYK(object):
 
     @staticmethod
-    def is_in_cfl(test_string, cnfg):
+    def is_in_cfl(test_string, cnfg, debug=False):
         # Initialize D table
         D = [[set() for i in range(len(test_string))] for n in range(len(test_string))]
         # Base Case
@@ -22,5 +22,9 @@ class CYK(object):
                     productions = [cnfg.fetch_lhs(i, j) for i in var1 for j in var2 if(len(cnfg.fetch_lhs(i,j)) > 0)]
                     for production in productions:
                         D[s][l].update(production)
-
+        if(debug):
+            for tables in D:
+                for productions in tables:
+                    print(f'|{productions}|')
+                print('\n')
         return 'S' in D[0][len(test_string) - 1]
