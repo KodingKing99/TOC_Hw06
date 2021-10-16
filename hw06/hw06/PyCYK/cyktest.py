@@ -112,145 +112,145 @@ class TestCykAlgorithm(unittest.TestCase):
         result = (CYK.is_in_cfl(input_str, self._grammar))
         print('Result = ' + str(result))
         
-    # def test2(self):
-    #     print("===== Test 2 =====")
-    #     self._use_grammar1()
-    #     #self._grammar.display()
-    #     input_str = 'baaa'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test2(self):
+        print("===== Test 2 =====")
+        self._use_grammar1()
+        #self._grammar.display()
+        input_str = 'baaa'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
         
-    # def test3(self):
-    #     print("===== Test 3 =====")
-    #     self._use_grammar1()
-    #     #self._grammar.display()
-    #     input_str = 'baba'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test3(self):
+        print("===== Test 3 =====")
+        self._use_grammar1()
+        #self._grammar.display()
+        input_str = 'baba'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
         
-    # def test4(self):
-    #     print("===== Test 4 =====")
-    #     self._use_grammar1()
-    #     #self._grammar.display()
-    #     input_str = 'baaabab'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test4(self):
+        print("===== Test 4 =====")
+        self._use_grammar1()
+        #self._grammar.display()
+        input_str = 'baaabab'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test4a(self):
-    #     print('===== Test 4a =====')
-    #     self._use_grammar1()
-    #     input_str = 'baab'
-    #     print('Input string: {}'.format(input_str))
-    #     result = (CYK.is_in_cfl(input_str, self._grammar, True))
-    #     print('Result = ' + str(result))
+    def test4a(self):
+        print('===== Test 4a =====')
+        self._use_grammar1()
+        input_str = 'baab'
+        print('Input string: {}'.format(input_str))
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test4b(self):
-    #     print('===== Test 4b =====')
-    #     self._use_grammar1()
-    #     input_str = 'aaab'
-    #     print('Input string: {}'.format(input_str))
-    #     result = (CYK.is_in_cfl(input_str, self._grammar, True))
-    #     print('Result = ' + str(result))
+    def test4b(self):
+        print('===== Test 4b =====')
+        self._use_grammar1()
+        input_str = 'aaab'
+        print('Input string: {}'.format(input_str))
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # ### ===================== Grammar 2 Tests #############################
+    ### ===================== Grammar 2 Tests #############################
     
-    # def test5(self):
-    #     print("===== Test 5 =====")
-    #     self._use_grammar2()
-    #     #self._grammar.display()
-    #     input_str = 'aabb'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test5(self):
+        print("===== Test 5 =====")
+        self._use_grammar2()
+        #self._grammar.display()
+        input_str = 'aabb'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test5a(self):
-    #     print("===== Test 5a =====")
-    #     self._use_grammar2()
-    #     #self._grammar.display()
-    #     input_str = 'bbb'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test5a(self):
+        print("===== Test 5a =====")
+        self._use_grammar2()
+        #self._grammar.display()
+        input_str = 'bbb'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test5b(self):
-    #     print("===== Test 5b =====")
-    #     self._use_grammar2()
-    #     #self._grammar.display()
-    #     input_str = 'bbb'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test5b(self):
+        print("===== Test 5b =====")
+        self._use_grammar2()
+        #self._grammar.display()
+        input_str = 'bbb'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test5c(self):
-    #     print("===== Test 5c =====")
-    #     self._use_grammar2()
-    #     #self._grammar.display()
-    #     input_str = 'cccccb'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test5c(self):
+        print("===== Test 5c =====")
+        self._use_grammar2()
+        #self._grammar.display()
+        input_str = 'cccccb'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test5d(self):
-    #     print("===== Test 5d =====")
-    #     self._use_grammar2()
-    #     #self._grammar.display()
-    #     input_str = 'bababaaa'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test5d(self):
+        print("===== Test 5d =====")
+        self._use_grammar2()
+        #self._grammar.display()
+        input_str = 'bababaaa'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
         
     # ### ===================== Grammar 3 Tests #############################
 
-    # def test6(self):
-    #     print("===== Test 6 =====")
-    #     self._use_grammar3()
-    #     input_str = 'abc'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test6(self):
+        print("===== Test 6 =====")
+        self._use_grammar3()
+        input_str = 'abc'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test7(self):
-    #     print("===== Test 7 =====")
-    #     self._use_grammar3()
-    #     input_str = 'abbbabb'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test7(self):
+        print("===== Test 7 =====")
+        self._use_grammar3()
+        input_str = 'abbbabb'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test7b(self):
-    #     print("===== Test 7b =====")
-    #     self._use_grammar3()
-    #     input_str = 'abbc'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test7b(self):
+        print("===== Test 7b =====")
+        self._use_grammar3()
+        input_str = 'abbc'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test8(self):
-    #     print("===== Test 8 =====")
-    #     self._use_grammar3()
-    #     input_str = 'bbc'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test8(self):
+        print("===== Test 8 =====")
+        self._use_grammar3()
+        input_str = 'bbc'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test9(self):
-    #     print("===== Test 9 =====")
-    #     self._use_grammar3()
-    #     input_str = 'aaabb'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test9(self):
+        print("===== Test 9 =====")
+        self._use_grammar3()
+        input_str = 'aaabb'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
-    # def test10(self):
-    #     print("===== Test 10 =====")
-    #     self._use_grammar3()
-    #     input_str = 'ab'
-    #     print('Input string: ' + input_str)
-    #     result = (CYK.is_in_cfl(input_str, self._grammar))
-    #     print('Result = ' + str(result))
+    def test10(self):
+        print("===== Test 10 =====")
+        self._use_grammar3()
+        input_str = 'ab'
+        print('Input string: ' + input_str)
+        result = (CYK.is_in_cfl(input_str, self._grammar))
+        print('Result = ' + str(result))
 
 if __name__ == '__main__':
     unittest.main()
